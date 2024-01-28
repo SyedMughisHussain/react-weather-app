@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Welcome from "./Welcome";
 
 const App = () => {
   return (
-    <h1 className='text-4xl bg-orange-800'>Hello World</h1>
-  )
-}
+    <div className="h-screen flex justify-center items-center">
+      <Welcome />
+    </div>
+  );
+};
 
-export default App
+export default App;
