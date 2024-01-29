@@ -1,18 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Form from "./Form";
+import axios from "axios";
 
 const Welcome = () => {
 
   const getData = (data) => {
     console.log(data);
-  }
+  } 
 
   return (
     <div className="h-[450px] shadow-2xl shadow-slate-700 w-[700px] rounded-xl mt-[40px]">
-      {/* <p className="text-center text-[25px] font-bold mt-2">
-        React Weather App
-      </p> */}
-      <Form getData={getData}/>
+      <Form getData={getData} />
     </div>
   );
 };
