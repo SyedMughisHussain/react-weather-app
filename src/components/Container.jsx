@@ -16,12 +16,18 @@ const Container = (props) => {
       </p>
       <div className="flex justify-around">
         <div className="flex">
-          <ReactAnimatedWeather icon="RAIN" size="40" />
-          <p>HEllow</p>
+          <ReactAnimatedWeather icon="WIND" size={50} />
+          <div>
+            <p className="text-[20px] font-bold">{props.windSpeed}m/s</p>
+            <p className="text-[20px] font-bold">Wind Spedd</p>
+          </div>
         </div>
         <div className="flex">
-          <ReactAnimatedWeather icon="WIND" size="40" />
-          <p>Word</p>
+          <ReactAnimatedWeather icon="RAIN" size={50} />
+          <div>
+            <p className="text-[20px] font-bold">{props.humidity}%</p>
+            <p className="text-[20px] font-bold">Humidity</p>
+          </div>
         </div>
       </div>
     </div>
